@@ -43,7 +43,7 @@ class FormBloc extends Bloc<FormEvent, FormState> {
             authFailureOrSuccess: null,
           ));
 
-          failureOrSuccess = await _repository.signInWithEmailAndPassword(
+          failureOrSuccess = await _repository.signIn(
             state.emailAddress,
             state.password,
           );

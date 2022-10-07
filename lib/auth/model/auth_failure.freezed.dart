@@ -34,19 +34,19 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(InvalidEmailAndPasswordCombination value)
+    required TResult Function(_InvalidEmailAndPasswordCombination value)
         invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
     required TResult orElse(),
   }) =>
@@ -70,33 +70,33 @@ class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  factory _$$InvalidEmailAndPasswordCombinationCopyWith(
-          _$InvalidEmailAndPasswordCombination value,
-          $Res Function(_$InvalidEmailAndPasswordCombination) then) =
-      __$$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
+abstract class _$$_InvalidEmailAndPasswordCombinationCopyWith<$Res> {
+  factory _$$_InvalidEmailAndPasswordCombinationCopyWith(
+          _$_InvalidEmailAndPasswordCombination value,
+          $Res Function(_$_InvalidEmailAndPasswordCombination) then) =
+      __$$_InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
+class __$$_InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
     extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  __$$InvalidEmailAndPasswordCombinationCopyWithImpl(
-      _$InvalidEmailAndPasswordCombination _value,
-      $Res Function(_$InvalidEmailAndPasswordCombination) _then)
-      : super(_value, (v) => _then(v as _$InvalidEmailAndPasswordCombination));
+    implements _$$_InvalidEmailAndPasswordCombinationCopyWith<$Res> {
+  __$$_InvalidEmailAndPasswordCombinationCopyWithImpl(
+      _$_InvalidEmailAndPasswordCombination _value,
+      $Res Function(_$_InvalidEmailAndPasswordCombination) _then)
+      : super(_value, (v) => _then(v as _$_InvalidEmailAndPasswordCombination));
 
   @override
-  _$InvalidEmailAndPasswordCombination get _value =>
-      super._value as _$InvalidEmailAndPasswordCombination;
+  _$_InvalidEmailAndPasswordCombination get _value =>
+      super._value as _$_InvalidEmailAndPasswordCombination;
 }
 
 /// @nodoc
 
-class _$InvalidEmailAndPasswordCombination
+class _$_InvalidEmailAndPasswordCombination
     with DiagnosticableTreeMixin
-    implements InvalidEmailAndPasswordCombination {
-  const _$InvalidEmailAndPasswordCombination();
+    implements _InvalidEmailAndPasswordCombination {
+  const _$_InvalidEmailAndPasswordCombination();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -114,7 +114,7 @@ class _$InvalidEmailAndPasswordCombination
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$InvalidEmailAndPasswordCombination);
+            other is _$_InvalidEmailAndPasswordCombination);
   }
 
   @override
@@ -151,7 +151,7 @@ class _$InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(InvalidEmailAndPasswordCombination value)
+    required TResult Function(_InvalidEmailAndPasswordCombination value)
         invalidEmailAndPasswordCombination,
   }) {
     return invalidEmailAndPasswordCombination(this);
@@ -160,7 +160,7 @@ class _$InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return invalidEmailAndPasswordCombination?.call(this);
@@ -169,7 +169,7 @@ class _$InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
     required TResult orElse(),
   }) {
@@ -180,7 +180,7 @@ class _$InvalidEmailAndPasswordCombination
   }
 }
 
-abstract class InvalidEmailAndPasswordCombination implements AuthFailure {
-  const factory InvalidEmailAndPasswordCombination() =
-      _$InvalidEmailAndPasswordCombination;
+abstract class _InvalidEmailAndPasswordCombination implements AuthFailure {
+  const factory _InvalidEmailAndPasswordCombination() =
+      _$_InvalidEmailAndPasswordCombination;
 }

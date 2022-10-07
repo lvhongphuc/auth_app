@@ -1,25 +1,19 @@
 import 'package:dartz/dartz.dart';
-import 'package:uuid/uuid.dart';
-import 'errors.dart';
 
+import 'exceptions.dart';
 import 'failures.dart';
 
 abstract class ValueObject<T> {
   const ValueObject();
   Either<ValueFailure<T>, T> get value;
 
-  /// Throws [UnexpectedError] containing the [ValueFailure]
+  // Unfold the value of ValueObject
+  // We only use this function when the value's valid
+  // otherwise the app will be crashed
   T getOrCrash() {
-    // return value.fold((l) => throw UnexpectedError(l), (r) => r);
     return value.fold((l) => throw UnexpectedException(l), id);
   }
 
-  // Either<ValueFailure<dynamic>, Unit> get failureOrUnit {
-  //   return value.fold(
-  //     (l) => left(l),
-  //     (r) => right(unit),
-  //   );
-  // }
   ValueFailure<dynamic>? get failure {
     return value.fold(
       (l) => l,
@@ -41,18 +35,4 @@ abstract class ValueObject<T> {
 
   @override
   String toString() => 'Value(value: $value)';
-}
-
-class UniqueId extends ValueObject<String> {
-  @override
-  final Either<ValueFailure<String>, String> value;
-
-  const UniqueId._(this.value);
-
-  factory UniqueId() {
-    return UniqueId._(right(const Uuid().v1()));
-  }
-  factory UniqueId.fromUniqueString(String uniqueId) {
-    return UniqueId._(right(uniqueId));
-  }
 }
