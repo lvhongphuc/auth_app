@@ -8,8 +8,9 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
+import 'auth/repository/auth_repository.dart' as _i3;
 import 'auth/repository/auth_repository_impl.dart'
-    as _i3; // ignore_for_file: unnecessary_lambdas
+    as _i4; // ignore_for_file: unnecessary_lambdas
 
 // ignore_for_file: lines_longer_than_80_chars
 /// initializes the registration of provided dependencies inside of [GetIt]
@@ -23,6 +24,6 @@ _i1.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.lazySingleton<_i3.AuthRepositoryImpl>(() => _i3.AuthRepositoryImpl());
+  gh.lazySingleton<_i3.AuthRepository>(() => _i4.AuthRepositoryImpl());
   return get;
 }
