@@ -3,21 +3,23 @@ import 'package:auth_app/auth/repository/auth_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:injectable/injectable.dart';
 
 import '../../model/email_address.dart';
 import '../../model/password.dart';
 
-part 'form_event.dart';
-part 'form_state.dart';
-part 'form_bloc.freezed.dart';
+part 'auth_form_event.dart';
+part 'auth_form_state.dart';
+part 'auth_form_bloc.freezed.dart';
 
-class FormBloc extends Bloc<FormEvent, FormState> {
+@injectable
+class AuthFormBloc extends Bloc<AuthFormEvent, AuthFormState> {
   final AuthRepository _repository;
-  FormBloc(this._repository) : super(FormState.initial()) {
-    on<FormEvent>(_onFormEvent);
+  AuthFormBloc(this._repository) : super(AuthFormState.initial()) {
+    on<AuthFormEvent>(_onAuthFormEvent);
   }
 
-  Future<void> _onFormEvent(FormEvent event, Emitter<FormState> emit) {
+  Future<void> _onAuthFormEvent(AuthFormEvent event, Emitter<AuthFormState> emit) {
     return event.map(
       emailChanged: (e) async {
         emit(state.copyWith(

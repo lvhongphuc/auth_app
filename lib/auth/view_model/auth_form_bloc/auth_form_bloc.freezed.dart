@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'form_bloc.dart';
+part of 'auth_form_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$FormEvent {
+mixin _$AuthFormEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String emailStr) emailChanged,
@@ -63,18 +63,20 @@ mixin _$FormEvent {
 }
 
 /// @nodoc
-abstract class $FormEventCopyWith<$Res> {
-  factory $FormEventCopyWith(FormEvent value, $Res Function(FormEvent) then) =
-      _$FormEventCopyWithImpl<$Res>;
+abstract class $AuthFormEventCopyWith<$Res> {
+  factory $AuthFormEventCopyWith(
+          AuthFormEvent value, $Res Function(AuthFormEvent) then) =
+      _$AuthFormEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FormEventCopyWithImpl<$Res> implements $FormEventCopyWith<$Res> {
-  _$FormEventCopyWithImpl(this._value, this._then);
+class _$AuthFormEventCopyWithImpl<$Res>
+    implements $AuthFormEventCopyWith<$Res> {
+  _$AuthFormEventCopyWithImpl(this._value, this._then);
 
-  final FormEvent _value;
+  final AuthFormEvent _value;
   // ignore: unused_field
-  final $Res Function(FormEvent) _then;
+  final $Res Function(AuthFormEvent) _then;
 }
 
 /// @nodoc
@@ -86,7 +88,8 @@ abstract class _$$_EmailChangedCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_EmailChangedCopyWithImpl<$Res> extends _$FormEventCopyWithImpl<$Res>
+class __$$_EmailChangedCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements _$$_EmailChangedCopyWith<$Res> {
   __$$_EmailChangedCopyWithImpl(
       _$_EmailChanged _value, $Res Function(_$_EmailChanged) _then)
@@ -118,7 +121,7 @@ class _$_EmailChanged implements _EmailChanged {
 
   @override
   String toString() {
-    return 'FormEvent.emailChanged(emailStr: $emailStr)';
+    return 'AuthFormEvent.emailChanged(emailStr: $emailStr)';
   }
 
   @override
@@ -207,7 +210,7 @@ class _$_EmailChanged implements _EmailChanged {
   }
 }
 
-abstract class _EmailChanged implements FormEvent {
+abstract class _EmailChanged implements AuthFormEvent {
   const factory _EmailChanged(final String emailStr) = _$_EmailChanged;
 
   String get emailStr;
@@ -226,7 +229,7 @@ abstract class _$$_PasswordChangedCopyWith<$Res> {
 
 /// @nodoc
 class __$$_PasswordChangedCopyWithImpl<$Res>
-    extends _$FormEventCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements _$$_PasswordChangedCopyWith<$Res> {
   __$$_PasswordChangedCopyWithImpl(
       _$_PasswordChanged _value, $Res Function(_$_PasswordChanged) _then)
@@ -258,7 +261,7 @@ class _$_PasswordChanged implements _PasswordChanged {
 
   @override
   String toString() {
-    return 'FormEvent.passwordChanged(passwordStr: $passwordStr)';
+    return 'AuthFormEvent.passwordChanged(passwordStr: $passwordStr)';
   }
 
   @override
@@ -348,7 +351,7 @@ class _$_PasswordChanged implements _PasswordChanged {
   }
 }
 
-abstract class _PasswordChanged implements FormEvent {
+abstract class _PasswordChanged implements AuthFormEvent {
   const factory _PasswordChanged(final String passwordStr) = _$_PasswordChanged;
 
   String get passwordStr;
@@ -365,7 +368,8 @@ abstract class _$$_SignInPressedCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_SignInPressedCopyWithImpl<$Res> extends _$FormEventCopyWithImpl<$Res>
+class __$$_SignInPressedCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements _$$_SignInPressedCopyWith<$Res> {
   __$$_SignInPressedCopyWithImpl(
       _$_SignInPressed _value, $Res Function(_$_SignInPressed) _then)
@@ -382,7 +386,7 @@ class _$_SignInPressed implements _SignInPressed {
 
   @override
   String toString() {
-    return 'FormEvent.signInPressed()';
+    return 'AuthFormEvent.signInPressed()';
   }
 
   @override
@@ -463,12 +467,12 @@ class _$_SignInPressed implements _SignInPressed {
   }
 }
 
-abstract class _SignInPressed implements FormEvent {
+abstract class _SignInPressed implements AuthFormEvent {
   const factory _SignInPressed() = _$_SignInPressed;
 }
 
 /// @nodoc
-mixin _$FormState {
+mixin _$AuthFormState {
   EmailAddress get emailAddress => throw _privateConstructorUsedError;
   Password get password => throw _privateConstructorUsedError;
   bool get showErrorMessages => throw _privateConstructorUsedError;
@@ -477,14 +481,15 @@ mixin _$FormState {
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $FormStateCopyWith<FormState> get copyWith =>
+  $AuthFormStateCopyWith<AuthFormState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FormStateCopyWith<$Res> {
-  factory $FormStateCopyWith(FormState value, $Res Function(FormState) then) =
-      _$FormStateCopyWithImpl<$Res>;
+abstract class $AuthFormStateCopyWith<$Res> {
+  factory $AuthFormStateCopyWith(
+          AuthFormState value, $Res Function(AuthFormState) then) =
+      _$AuthFormStateCopyWithImpl<$Res>;
   $Res call(
       {EmailAddress emailAddress,
       Password password,
@@ -494,12 +499,13 @@ abstract class $FormStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FormStateCopyWithImpl<$Res> implements $FormStateCopyWith<$Res> {
-  _$FormStateCopyWithImpl(this._value, this._then);
+class _$AuthFormStateCopyWithImpl<$Res>
+    implements $AuthFormStateCopyWith<$Res> {
+  _$AuthFormStateCopyWithImpl(this._value, this._then);
 
-  final FormState _value;
+  final AuthFormState _value;
   // ignore: unused_field
-  final $Res Function(FormState) _then;
+  final $Res Function(AuthFormState) _then;
 
   @override
   $Res call({
@@ -535,10 +541,11 @@ class _$FormStateCopyWithImpl<$Res> implements $FormStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_FormStateCopyWith<$Res> implements $FormStateCopyWith<$Res> {
-  factory _$$_FormStateCopyWith(
-          _$_FormState value, $Res Function(_$_FormState) then) =
-      __$$_FormStateCopyWithImpl<$Res>;
+abstract class _$$_AuthFormStateCopyWith<$Res>
+    implements $AuthFormStateCopyWith<$Res> {
+  factory _$$_AuthFormStateCopyWith(
+          _$_AuthFormState value, $Res Function(_$_AuthFormState) then) =
+      __$$_AuthFormStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {EmailAddress emailAddress,
@@ -549,14 +556,15 @@ abstract class _$$_FormStateCopyWith<$Res> implements $FormStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_FormStateCopyWithImpl<$Res> extends _$FormStateCopyWithImpl<$Res>
-    implements _$$_FormStateCopyWith<$Res> {
-  __$$_FormStateCopyWithImpl(
-      _$_FormState _value, $Res Function(_$_FormState) _then)
-      : super(_value, (v) => _then(v as _$_FormState));
+class __$$_AuthFormStateCopyWithImpl<$Res>
+    extends _$AuthFormStateCopyWithImpl<$Res>
+    implements _$$_AuthFormStateCopyWith<$Res> {
+  __$$_AuthFormStateCopyWithImpl(
+      _$_AuthFormState _value, $Res Function(_$_AuthFormState) _then)
+      : super(_value, (v) => _then(v as _$_AuthFormState));
 
   @override
-  _$_FormState get _value => super._value as _$_FormState;
+  _$_AuthFormState get _value => super._value as _$_AuthFormState;
 
   @override
   $Res call({
@@ -566,7 +574,7 @@ class __$$_FormStateCopyWithImpl<$Res> extends _$FormStateCopyWithImpl<$Res>
     Object? isSubmitting = freezed,
     Object? authFailureOrSuccess = freezed,
   }) {
-    return _then(_$_FormState(
+    return _then(_$_AuthFormState(
       emailAddress: emailAddress == freezed
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
@@ -593,8 +601,8 @@ class __$$_FormStateCopyWithImpl<$Res> extends _$FormStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FormState implements _FormState {
-  const _$_FormState(
+class _$_AuthFormState implements _AuthFormState {
+  const _$_AuthFormState(
       {required this.emailAddress,
       required this.password,
       required this.showErrorMessages,
@@ -614,14 +622,14 @@ class _$_FormState implements _FormState {
 
   @override
   String toString() {
-    return 'FormState(emailAddress: $emailAddress, password: $password, showErrorMessages: $showErrorMessages, isSubmitting: $isSubmitting, authFailureOrSuccess: $authFailureOrSuccess)';
+    return 'AuthFormState(emailAddress: $emailAddress, password: $password, showErrorMessages: $showErrorMessages, isSubmitting: $isSubmitting, authFailureOrSuccess: $authFailureOrSuccess)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FormState &&
+            other is _$_AuthFormState &&
             const DeepCollectionEquality()
                 .equals(other.emailAddress, emailAddress) &&
             const DeepCollectionEquality().equals(other.password, password) &&
@@ -644,17 +652,18 @@ class _$_FormState implements _FormState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_FormStateCopyWith<_$_FormState> get copyWith =>
-      __$$_FormStateCopyWithImpl<_$_FormState>(this, _$identity);
+  _$$_AuthFormStateCopyWith<_$_AuthFormState> get copyWith =>
+      __$$_AuthFormStateCopyWithImpl<_$_AuthFormState>(this, _$identity);
 }
 
-abstract class _FormState implements FormState {
-  const factory _FormState(
-      {required final EmailAddress emailAddress,
-      required final Password password,
-      required final bool showErrorMessages,
-      required final bool isSubmitting,
-      final Either<AuthFailure, Unit>? authFailureOrSuccess}) = _$_FormState;
+abstract class _AuthFormState implements AuthFormState {
+  const factory _AuthFormState(
+          {required final EmailAddress emailAddress,
+          required final Password password,
+          required final bool showErrorMessages,
+          required final bool isSubmitting,
+          final Either<AuthFailure, Unit>? authFailureOrSuccess}) =
+      _$_AuthFormState;
 
   @override
   EmailAddress get emailAddress;
@@ -668,6 +677,6 @@ abstract class _FormState implements FormState {
   Either<AuthFailure, Unit>? get authFailureOrSuccess;
   @override
   @JsonKey(ignore: true)
-  _$$_FormStateCopyWith<_$_FormState> get copyWith =>
+  _$$_AuthFormStateCopyWith<_$_AuthFormState> get copyWith =>
       throw _privateConstructorUsedError;
 }

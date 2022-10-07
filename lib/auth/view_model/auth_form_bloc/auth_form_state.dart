@@ -1,16 +1,16 @@
-part of 'form_bloc.dart';
+part of 'auth_form_bloc.dart';
 
 @freezed
-class FormState with _$FormState {
-  const factory FormState({
+class AuthFormState with _$AuthFormState {
+  const factory AuthFormState({
     required EmailAddress emailAddress,
     required Password password,
     required bool showErrorMessages,
     required bool isSubmitting,
     Either<AuthFailure, Unit>? authFailureOrSuccess,
-  }) = _FormState;
+  }) = _AuthFormState;
 
-  factory FormState.initial() => FormState(
+  factory AuthFormState.initial() => AuthFormState(
         emailAddress: EmailAddress.empty(),
         password: Password.empty(),
         showErrorMessages: false,
