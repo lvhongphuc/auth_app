@@ -1,16 +1,12 @@
 # auth_app
 
-A new Flutter project.
+You can locate the apk file inside the apk folder
 
-## Getting Started
+## Time for each function:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Research: 2 hours.
+2. Model: 20 minutes.
+3. Model - View: 40 minutes.
+4. Unit test: 2 hour
+5. View: 20 minutes
+4. Testing on mobile, web and macOS: 20 minutes
