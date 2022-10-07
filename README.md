@@ -1,4 +1,4 @@
-# auth_app
+# Authentication app
 
 You can locate the apk file inside the apk folder
 
