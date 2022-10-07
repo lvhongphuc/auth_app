@@ -14,12 +14,12 @@ abstract class ValueObject<T> {
     return value.fold((l) => throw UnexpectedException(l), id);
   }
 
-  ValueFailure<dynamic>? get failure {
-    return value.fold(
-      (l) => l,
-      (r) => null,
-    );
-  }
+  // ValueFailure<dynamic>? get failure {
+  //   return value.fold(
+  //     (l) => l,
+  //     (r) => null,
+  //   );
+  // }
 
   bool isValid() => value.isRight();
 
