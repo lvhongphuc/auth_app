@@ -63,6 +63,7 @@ class AuthForm extends StatelessWidget {
                     decoration: const InputDecoration(
                       labelText: 'Password',
                     ),
+                    obscureText: true,
                     onChanged: (val) => context
                         .read<AuthFormBloc>()
                         .add(AuthFormEvent.passwordChanged(val.trim())),
